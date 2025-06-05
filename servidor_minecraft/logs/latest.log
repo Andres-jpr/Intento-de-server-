@@ -1,39 +1,23 @@
-[14:45:52] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.14
-[14:45:52] [main/INFO]: Loading 4 mods:
-	- fabricloader 0.16.14
-	   \-- mixinextras 0.4.1
-	- java 21
-	- minecraft 1.21.4
-[14:45:52] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/workspaces/Intento-de-server-/servidor_minecraft/libraries/net/fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[14:45:58] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[14:46:00] [main/INFO]: Loaded 1370 recipes
-[14:46:00] [main/INFO]: Loaded 1481 advancements
-[14:46:00] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[14:46:00] [Server thread/INFO]: Loading properties
-[14:46:00] [Server thread/INFO]: Default game type: SURVIVAL
-[14:46:00] [Server thread/INFO]: Generating keypair
-[14:46:00] [Server thread/INFO]: Starting Minecraft server on *:25565
-[14:46:00] [Server thread/INFO]: Using epoll channel type
-[14:46:00] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[14:46:00] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[14:46:00] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[14:46:00] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[14:46:00] [Server thread/INFO]: Preparing level "world"
-[14:46:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[14:46:05] [Worker-Main-3/INFO]: Preparing spawn area: 2%
-[14:46:05] [Server thread/INFO]: Time elapsed: 4094 ms
-[14:46:05] [Server thread/INFO]: Done (4.359s)! For help, type "help"
-[14:47:05] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[14:48:22] [Server thread/INFO]: Andres-pr[/127.196.252.151:34793] logged in with entity id 53 at (16.97397094108172, 80.0, -3.381822660928232)
-[14:48:22] [Server thread/INFO]: Andres-pr joined the game
-[14:51:06] [Server thread/INFO]: Andres-pr has made the advancement [Monster Hunter]
-[14:51:46] [Server thread/INFO]: Andres-pr lost connection: Disconnected
-[14:51:46] [Server thread/INFO]: Andres-pr left the game
+[15:11:04] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.14
+[15:11:05] [main/WARN]: Mod resolution failed
+[15:11:05] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE servercore 1.5.8+1.21.4 {depends fabric-api-base @ [*]}, ROOT_FORCELOAD_SINGLE servercore 1.5.8+1.21.4]
+[15:11:05] [main/INFO]: Reason: [HARD_DEP servercore 1.5.8+1.21.4 {depends fabric-api-base @ [*]}, HARD_DEP servercore 1.5.8+1.21.4 {depends fabric-command-api-v2 @ [*]}, HARD_DEP servercore 1.5.8+1.21.4 {depends fabric-lifecycle-events-v1 @ [*]}, HARD_DEP fabric-permissions-api-v0 0.3.3 {depends fabric-api-base @ [*]}]
+[15:11:05] [main/INFO]: Fix: add [add:fabric-api-base 1 ([(-∞,∞)]), add:fabric-command-api-v2 1 ([(-∞,∞)]), add:fabric-lifecycle-events-v1 1 ([(-∞,∞)])], remove [], replace []
+[15:11:05] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install fabric-api-base, any version.
+	 - Install fabric-command-api-v2, any version.
+	 - Install fabric-lifecycle-events-v1, any version.
+More details:
+	 - Mod 'ServerCore' (servercore) 1.5.8+1.21.4 requires any version of fabric-api-base, which is missing!
+	 - Mod 'ServerCore' (servercore) 1.5.8+1.21.4 requires any version of fabric-command-api-v2, which is missing!
+	 - Mod 'ServerCore' (servercore) 1.5.8+1.21.4 requires any version of fabric-lifecycle-events-v1, which is missing!
+	 - Mod 'fabric-permissions-api' (fabric-permissions-api-v0) 0.3.3 requires any version of fabric-api-base, which is missing!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69) [fabric-loader-0.16.14.jar:?]
+	at net.fabricmc.installer.ServerLauncher.main(ServerLauncher.java:69) [fabric-server-launch.jar:1.0.3]
